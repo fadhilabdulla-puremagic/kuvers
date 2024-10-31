@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Kuvers Piping</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <script>
+      fetch("./Components/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+          const links = document.querySelectorAll("nav a");
+          links.forEach((link) => {
+            if (link.getAttribute("href") === "about.html") {
+              link.classList.add("active");
+            } else {
+              link.classList.remove("active");
+            }
+          });
+        });
+      fetch("./Components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <div id="header"></div>
+    <!-- <section class="hero-section">
+      <div class="overlay">
+        <div class="text-container">
+          <h1>Your partner for <br /><span>SUCCESS</span></h1>
+          <p>Process Piping, Offshore, Pipelines</p>
+          <a href="#" class="cta-button">Call to action goes here</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="main-banner-about">
+      <div class="text-overlay row align-items-center p-4">
+        <div class="col-md-1 d-none d-md-block"></div>
+        <div class="col-md-7 text-start">
+          <h1 class="heading">
+            A Legacy of <span class="text-secondary">excellence</span>
+          </h1>
+          <h2 class="heading">for a modern world</h2>
+          <p class="sub-heading">
+            We go the extra mile for every customer, delivering first-class
+            turnkey solutions on a global scale, achieving sustainability
+            through efficiency and excellence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
+            <h3 class="text-primary fw-bold mb-3 underline-alt fs-1">
+              About Us
+              <!-- <span
+                class="underline position-absolute start-0 text-black-50"
+              ></span> -->
+            </h3>
+            <p class="pt-4">
+              Founded in Düsseldorf in 1966, Kürvers is an international
+              operating group of companies and a proven specialist for pipeline
+              projects in the petrochemical and energy industries.
+            </p>
+            <p>
+              With over 55 years of experience, we excel in procuring materials
+              globally for complex projects, ensuring unmatched delivery through
+              trusted supplier relationships. Our commitment to reliability,
+              integrity, and collaboration drives us to exceed expectations and
+              meet every client's unique project requirements.
+            </p>
+          </div>
+          <div class="col-md-1 d-none d-md-block"></div>
+          <div class="col-md-5 pt-4" data-aos="fade-left" data-aos-delay="200">
+            <img
+              src="assets/img/hero-carousel/hero-carousel-4.jpg"
+              alt="About Us Image"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light">
+      <div class="container">
+        <div class="row m-4 justify-content-center g-4">
+          <div class="col-md-12 text-center">
+            <h3 class="text-primary fw-bold mb-3 underline-alt">Why Us</h3>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-us-content-box">
+              <div class="logo-circle">
+                <img src="logo.png" alt="Logo" />
+                <!-- Replace with your logo -->
+              </div>
+              <h3 class="text-center">Excellence</h3>
+              <p>
+                Kürvers staff have an impressive 1000+ years of accumulated
+                industry experience and relationships with the leading
+                manufacturers, stockists and service providers worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-us-content-box">
+              <div class="logo-circle">
+                <img src="logo.png" alt="Logo" />
+                <!-- Replace with your logo -->
+              </div>
+              <h3 class="text-center">Quality</h3>
+              <p>
+                Is at the forefront in everything we do. It's our absolute
+                priority, providing you with the highest quality in products and
+                services. Kürvers has been ISO 9001:2015 certified since 1990.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-us-content-box">
+              <div class="logo-circle">
+                <img src="logo.png" alt="Logo" />
+                <!-- Replace with your logo -->
+              </div>
+              <h3 class="text-center">Experience</h3>
+              <p>
+                With 3000+ completed projects since its foundation in 1966,
+                Kürvers has a thorough understanding of the critical
+                requirements for successful piping & steel supplies.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-us-content-box">
+              <div class="logo-circle">
+                <img src="logo.png" alt="Logo" />
+                <!-- Replace with your logo -->
+              </div>
+              <h3 class="text-center">Collaboration</h3>
+              <p>
+                Kürvers operates globally with a far-reaching supply network. We
+                are always close to our clients, providing unrivalled, personal
+                service wherever they are.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-us-content-box">
+              <div class="logo-circle">
+                <img src="logo.png" alt="Logo" />
+                <!-- Replace with your logo -->
+              </div>
+              <h3 class="text-center">Integrity</h3>
+              <p>
+                Dedicated teams ensure seamless project management so that our
+                clients can focus on their tasks.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-us-content-box">
+              <div class="logo-circle">
+                <img src="logo.png" alt="Logo" />
+                <!-- Replace with your logo -->
+              </div>
+              <h3 class="text-center">Customer Focus</h3>
+              <p>
+                We are dedicated to our customers. We listen and understand
+                their needs, forging life-long partnerships and ensuring
+                exceptional delivery through flexible, tailor-made solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
