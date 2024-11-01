@@ -9,29 +9,49 @@
 # Set main reusable colors and fonts using CSS variables
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "chairdrobe";
+  src: url("../NewSet/Font/CHAIRDROBE/chairdrobe-regular.otf")
+    format("opentype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "chairdrobe";
+  src: url("../NewSet/Font/CHAIRDROBE/chairdrobe-medium.otf") format("opentype");
+  font-weight: 500; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "evolventa";
+  src: url("../NewSet/Font/EVOLVENTA/Evolventa-Regular-BF63c0b29a31dbb.ttf")
+    format("opentype");
+  font-weight: 500; /* Regular */
+  font-style: normal;
+}
+@font-face {
+  font-family: "evolventa";
+  src: url("../NewSet/Font/EVOLVENTA/Evolventa-Bold-BF63c0b29a3afd5.ttf")
+    format("opentype");
+  font-weight: 700; /* Regular */
+  font-style: normal;
+}
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+  /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Roboto", sans-serif;
-  --font-secondary: "Work Sans", sans-serif;
-}
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  /* --font-primary: "Roboto", sans-serif; */
+  --font-primary: "CustomFont";
+  --font-secondary: "evolventa";
 
-/* Colors */
-:root {
   --color-default: #364d59;
   --color-primary: #1f3855;
   --color-secondary: #008dce;
+
+  scroll-behavior: smooth;
 }
 
-/* Smooth scroll behavior */
-:root {
-  scroll-behavior: smooth;
-}
-html {
-  scroll-behavior: smooth;
-}
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1920,7 +1940,7 @@ h3:hover .underline {
   /* background-color: yellow !important; */
 }
 .hero-section:first-of-type {
-  background-image: url("../img/hero-carousel/hero-carousel-1.jpg");
+  background-image: url("../NewSet/Home1.png");
 }
 
 .hero-section:nth-of-type(2) {
@@ -2900,7 +2920,36 @@ h3:hover .underline {
 .main-banner-about {
   position: relative; /* Allows positioning of text on top */
   height: 100vh; /* Full viewport height */
-  background-image: url("../img/hero-carousel/hero-carousel-4.jpg"); /* Set your background image */
+  background-image: linear-gradient(to right, #1f2d3c 15%, #1f38553d 90%),
+    url("../NewSet/About1.png");
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  display: flex; /* Flexbox for centering text */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  /* padding: 20px; */
+}
+.main-banner-turnkey {
+  position: relative; /* Allows positioning of text on top */
+  height: 100vh; /* Full viewport height */
+  background-image: linear-gradient(to right, #1f2d3c 20%, #1f38553d 95%),
+    url("../NewSet/Turnkey1.png");
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  display: flex; /* Flexbox for centering text */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  /* padding: 20px; */
+}
+.main-banner-product-range {
+  position: relative; /* Allows positioning of text on top */
+  height: 100vh; /* Full viewport height */
+  background-image: linear-gradient(to right, #1f2d3c 20%, #1f38553d 95%),
+    url("../NewSet/Home4.png");
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
   display: flex; /* Flexbox for centering text */
@@ -2932,6 +2981,7 @@ h3:hover .underline {
   color: var(--color-primary);
   text-align: center;
   margin-top: 40px;
+  height: 250px; /* Set the fixed height; adjust as needed */
 }
 .about-us-content-box .logo-circle {
   width: 80px; /* Diameter of the circle */
@@ -2975,4 +3025,22 @@ h3:hover .underline {
 .underline-alt:hover::after {
   width: 100%; /* Change width on hover */
   opacity: 0.6; /* Slightly fade the underline */
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.custom-list li::before {
+  content: "▶";
+  color: #db80a8;
+  margin-right: 10px;
+  font-size: 1.1rem;
 }
