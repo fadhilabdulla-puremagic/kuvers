@@ -1925,28 +1925,28 @@ h3:hover .underline {
 /* Main section styling */
 .hero-section {
   position: relative;
-  /* background-image: url("../img/hero-carousel/hero-carousel-2.jpg"); */
+  background-image: url("../NewSet/Home1.png");
   background-size: 100%;
   scroll-snap-align: start;
   background-position: center;
   height: 100vh; /* Full screen height */
   display: flex;
   /* align-items: center; */
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   overflow: hidden;
   margin: 0; /* Ensure no external margin */
   padding: 0; /* Ensure no external padding */
   animation: backgroundImageZoom 5s ease-in-out forwards;
   /* background-color: yellow !important; */
 }
-.hero-section:first-of-type {
+/* .hero-section:first-of-type {
   background-image: url("../NewSet/Home1.png");
-}
+} */
 
-.hero-section:nth-of-type(2) {
+/* .hero-section:nth-of-type(2) {
   background-image: url("../img/hero-carousel/hero-carousel-2.jpg");
-  animation-delay: 4s; /* Delays the animation of the second section */
-}
+  animation-delay: 4s; 
+} */
 /* Overlay styling */
 .overlay {
   position: relative;
