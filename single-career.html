@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Kuvers Piping</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <script>
+      fetch("./Components/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+          const links = document.querySelectorAll("nav a");
+          links.forEach((link) => {
+            link.classList.remove("active");
+          });
+        });
+      fetch("./Components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <div id="header"></div>
+    <!-- <section class="hero-section">
+      <div class="overlay">
+        <div class="text-container">
+          <h1>Your partner for <br /><span>SUCCESS</span></h1>
+          <p>Process Piping, Offshore, Pipelines</p>
+          <a href="#" class="cta-button">Call to action goes here</a>
+        </div>
+      </div>
+    </section> -->
+
+    <section style="padding-bottom: 0%">
+      <div
+        class="row text-overlay justify-content-center"
+        style="
+          background-image: url('assets/NewSet/Turnkey2.png');
+          background-size: cover;
+        "
+        data-aos="fade-in"
+        data-aos-delay="200"
+      >
+        <div class="col-md-8 py-5" data-aos="fade-left" data-aos-delay="300">
+          <a href="careers.html">
+            <i class="fas fa-arrow-left"></i> Back to job listing
+          </a>
+          <h5
+            class="heading"
+            style="color: white !important"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            Accountant
+          </h5>
+          <div
+            class="job-details text-white"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <i class="fas fa-map-marker-alt"></i> Dubai
+            <i class="ms-4 fas fa-clock"></i> Permanent
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="job-tiles" style="padding-top: 40px">
+      <div class="container">
+        <div
+          class="row justify-content-center"
+          data-aos="fade-in"
+          data-aos-delay="600"
+        >
+          <div
+            class="col-md-9 text-primary"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
+            <p class="mb-1">
+              We are looking for an accountant who is responsible for
+              maintaining accurate financial records and preparing associated
+              reporting. The role is to support the organisation by ensuring
+              that all financial records and reporting are up to standard,
+              updated and maintained regularly.
+            </p>
+          </div>
+          <!-- <h2 class="mb-3">Worldwide opportunities</h2> -->
+        </div>
+        <div class="row justify-content-center g-4 mt-1">
+          <div class="col-md-9" data-aos="fade-left" data-aos-delay="600">
+            <h5 class="font-style-secondary fs-4 mb-3 fw-bold">
+              Responsibilities:
+            </h5>
+            <ul>
+              <li>
+                Ensure the timely and accurate preparation of monthly, Quarterly
+                and annual reports
+              </li>
+              <li>
+                Evaluate and review monthly financial statements, results of
+                operations, income statements and financial records.
+              </li>
+              <li>
+                Manage all accounting transactions and maintain general ledger
+              </li>
+              <li>Preparation and monitoring budgets</li>
+              <li>Management and Financial Reporting</li>
+              <li>
+                Appropriate recording and analysis of revenues and expenses
+              </li>
+              <li>
+                Appropriate coordination and communication with the relevant
+                customers, suppliers, and Sales personal to ensure accuracy of
+                information
+              </li>
+              <li>Assisting with external audit activities</li>
+              <li>Providing process and control improvements when required</li>
+            </ul>
+            <h5 class="font-style-secondary fs-4 mb-3 fw-bold">
+              Key Requirements :
+            </h5>
+            <ul>
+              <li>
+                Must have a degree in Finance or Accounting related
+                qualifications
+              </li>
+              <li>
+                Thorough knowledge and experience on working with a reputed ERP
+                system
+              </li>
+              <li>
+                At least 3 years’ experience ideally in a multinational company.
+              </li>
+              <li>
+                Must be familiar with the UAE regulatory and tax compliance
+              </li>
+              <li>Knowledge of Trade Finance</li>
+              <li>Excellent written and verbal communication skills</li>
+              <li>Knowledge of International Trade</li>
+              <li>
+                Knowledge of Bank Guarantees, Letter of Credit & Exchange
+                Hedging
+              </li>
+            </ul>
+            <ul></ul>
+            <a
+              href="single-career.html"
+              class="btn btn-secondary font-style-primary fs-6 fw-bold bg-secondary border rounded px-4 py-3 mt-4"
+            >
+              APPLY FOR THE POSITION</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

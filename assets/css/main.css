@@ -3156,3 +3156,7 @@ h3:hover .underline {
 .ls-0 {
   letter-spacing: 0 !important;
 }
+.location-list a {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
