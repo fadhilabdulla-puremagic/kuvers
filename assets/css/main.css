@@ -3066,9 +3066,9 @@ h3:hover .underline {
 
 .custom-list li::before {
   content: "▶";
-  color: #db80a8;
+  color: var(--color-secondary);
   margin-right: 10px;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .slide-content {
   position: relative;
