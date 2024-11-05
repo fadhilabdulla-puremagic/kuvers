@@ -42,9 +42,10 @@
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   /* --font-primary: "Roboto", sans-serif; */
-  --font-primary: "CustomFont";
+  --font-primary: "chairdrobe";
   --font-secondary: "evolventa";
 
+  --color-white: #fff;
   --color-default: #364d59;
   --color-primary: #1f3855;
   --color-secondary: #008dce;
@@ -56,8 +57,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: var(--font-default);
-  color: var(--color-default);
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
   overflow-x: hidden;
 }
 
@@ -364,10 +365,11 @@ h3:hover .underline {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3px;
+    padding: 0;
     font-family: var(--font-primary);
-    font-size: 14px;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     white-space: nowrap;
@@ -386,10 +388,11 @@ h3:hover .underline {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    /* padding: 0 20px; */
+    height: 3px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -403,6 +406,8 @@ h3:hover .underline {
   }
   .navbar li > a {
     /* color: #fff; */
+    padding: 0 5px;
+    margin: 0 10px;
     color: var(--color-primary);
   }
 
@@ -412,6 +417,18 @@ h3:hover .underline {
   .navbar li:hover > a {
     /* color: #fff; */
     color: var(--color-primary);
+  }
+  .navbar .contact {
+    padding: 5px 15px;
+    background-color: var(--color-secondary);
+    color: #fff !important;
+    margin-left: 35px;
+    border-radius: 5px;
+  }
+  .navbar .contact a:hover:before,
+  .navbar .contact li:hover > a:before,
+  .navbar .contact .active:before {
+    display: none;
   }
 
   .navbar .dropdown ul {
@@ -1487,7 +1504,7 @@ h3:hover .underline {
   .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgb(255, 255, 255) !important;
   opacity: 1;
 }
 
@@ -1507,7 +1524,7 @@ h3:hover .underline {
 .project-details .swiper-button-prev:after,
 .project-details .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 24px;
   border-radius: 50%;
   width: 48px;
@@ -2892,12 +2909,21 @@ h3:hover .underline {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
-
+.font-style-primary {
+  letter-spacing: 2px;
+  font-family: var(--font-primary) !important;
+}
+.font-style-secondary {
+  font-family: var(--font-secondary) !important;
+}
 .text-primary {
   color: var(--color-primary) !important;
 }
 .bg-primary {
   background-color: var(--color-primary) !important;
+}
+.bg-blue-light {
+  background-color: #64b8d73b !important;
 }
 .text-secondary {
   color: var(--color-secondary) !important;
@@ -3043,4 +3069,90 @@ h3:hover .underline {
   color: #db80a8;
   margin-right: 10px;
   font-size: 1.1rem;
+}
+.slide-content {
+  position: relative;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: var(--font-secondary);
+  letter-spacing: 1px;
+  font-weight: 700;
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-family: var(--font-primary) !important;
+  font-weight: 700;
+  font-size: 5.5em;
+  letter-spacing: 5px;
+}
+
+.overlay-text .highlight {
+  color: #00a2e8; /* Custom color for highlighted text */
+}
+
+.overlay-text p {
+  font-size: 2em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  background-color: #00a2e8;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn-custom:hover {
+  background-color: #008ac1;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.518));
+  z-index: 1; /* Ensures the overlay is above the image */
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff; /* Change this to your desired color for inactive bullets */
+  opacity: 0.5; /* Optional: make them slightly transparent */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(
+    --color-secondary
+  ); /* Change this to your desired color for active bullet */
+  opacity: 1; /* Ensure active bullet is fully opaque */
+}
+.ls-1 {
+  letter-spacing: 0.1rem;
+} /* Adjust value as needed */
+.ls-2 {
+  letter-spacing: 0.2rem;
+}
+.ls-3 {
+  letter-spacing: 0.3rem;
+}
+.ls-0 {
+  letter-spacing: 0 !important;
 }
