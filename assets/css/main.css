@@ -3160,3 +3160,13 @@ h3:hover .underline {
   color: var(--color-secondary);
   font-weight: 700;
 }
+.tippy-box[data-theme~="custom-theme"] {
+  background-color: var(--color-primary); /* Set your custom background color */
+  color: var(--color-white); /* Set your custom font color */
+  border: 2px solid var(--color-secondary); /* Optional: customize the border color */
+}
+
+/* Optional: Style the arrow to match */
+.tippy-box[data-theme~="custom-theme"] .tippy-arrow {
+  color: var(--color-secondary);
+}
