@@ -8,15 +8,15 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
     <script>
-      fetch("./Components/header.html")
-        .then((response) => response.text())
-        .then((data) => {
-          document.getElementById("header").innerHTML = data;
-          const links = document.querySelectorAll("nav a");
-          links.forEach((link) => {
-            link.classList.remove("active");
-          });
-        });
+      // fetch("./Components/header.html")
+      //   .then((response) => response.text())
+      //   .then((data) => {
+      //     document.getElementById("header").innerHTML = data;
+      //     const links = document.querySelectorAll("nav a");
+      //     links.forEach((link) => {
+      //       link.classList.remove("active");
+      //     });
+      //   });
       fetch("./Components/footer.html")
         .then((response) => response.text())
         .then((data) => {
@@ -62,7 +62,42 @@
 
   <body>
     <!-- ======= Hero Section ======= -->
-    <div id="header"></div>
+    <!-- <div id="header"></div> -->
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <i
+          class="mobile-nav-toggle mobile-nav-show bi bi-list text-primary"
+        ></i>
+        <i
+          class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x text-secondary"
+        ></i>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+              <a href="turnkey-solutions.html">Turnkey solutions</a>
+            </li>
+            <li>
+              <a href="product-range.html">product range</a>
+            </li>
+            <li><a href="careers.html">careers</a></li>
+
+            <li class="contact">
+              <a href="contact.html" style="color: white; font-weight: 500"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- <section class="hero-section">
       <div class="overlay">
         <div class="text-container">
