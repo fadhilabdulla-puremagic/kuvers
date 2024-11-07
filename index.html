@@ -7,7 +7,7 @@
     <title>Kuvers Piping</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
-    <script>
+    <!-- <script>
       fetch("./Components/header.html")
         .then((response) => response.text())
         .then((data) => {
@@ -26,7 +26,7 @@
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
         });
-    </script>
+    </script> -->
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon" />
@@ -73,68 +73,38 @@
 
   <body>
     <!-- ======= Hero Section ======= -->
-    <div id="header"></div>
-    <!-- <section class="hero-section">
-      <div class="overlay">
-        <div class="text-container">
-          <h1>Your partner for <br /><span>SUCCESS</span></h1>
-          <p>Process Piping, Offshore, Pipelines</p>
-          <a href="#" class="cta-button">Call to action goes here</a>
-        </div>
-      </div>
-    </section> -->
-    <!-- <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div
-          class="carousel-item active"
-          style="background-image: url('/assets/NewSet/Home1.png')"
-        >
-          <div class="carousel-caption">
-            <h1>Your Partner for <span class="highlight">Success</span></h1>
-            <p>Process Piping, Offshore, Pipelines</p>
-            <a href="#" class="btn btn-custom">Find Out More</a>
-          </div>
-        </div>
-        <div
-          class="carousel-item"
-          style="background-image: url('/assets/NewSet/About1.png')"
-        >
-          <div class="carousel-caption">
-            <h1>Your Partner for <span class="highlight">Excellence</span></h1>
-            <p>Advanced Engineering, Reliable Solutions</p>
-            <a href="#" class="btn btn-custom">Learn More</a>
-          </div>
-        </div>
-        <div
-          class="carousel-item"
-          style="background-image: url('/assets/NewSet/Home3.png')"
-        >
-          <div class="carousel-caption">
-            <h1>Your Partner for <span class="highlight">Innovation</span></h1>
-            <p>Modern Technology, Efficient Services</p>
-            <a href="#" class="btn btn-custom">Discover More</a>
-          </div>
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#partnerCarousel"
-        data-bs-slide="prev"
+    <!-- <div id="header"></div> -->
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#partnerCarousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div> -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <i
+          class="mobile-nav-toggle mobile-nav-show bi bi-list text-primary"
+        ></i>
+        <i
+          class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x text-secondary"
+        ></i>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="turnkey-solutions.html">Turnkey solutions</a></li>
+            <li><a href="product-range.html">product range</a></li>
+            <li><a href="careers.html">careers</a></li>
+
+            <li class="contact">
+              <a href="contact.html" style="color: white; font-weight: 500"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <div class="position-relative h-100">
       <div class="slides-1 portfolio-details-slider swiper">
