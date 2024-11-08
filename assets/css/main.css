@@ -3062,10 +3062,11 @@ h3:hover .underline {
   display: flex;
   align-items: flex-start;
   margin-bottom: 0.5rem;
+  margin-top: 15px;
 }
 
 .custom-list li::before {
-  content: "▶";
+  /* content: "▶"; */
   color: var(--color-secondary);
   margin-right: 10px;
   font-size: 0.9rem;

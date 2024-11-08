@@ -40,10 +40,11 @@
       rel="stylesheet"
     />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/tippy.js@6/themes/light-border.css"
-    />
+    /> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/custom-theme.css"> -->
 
     <!-- Vendor CSS Files -->
     <link
@@ -67,6 +68,16 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      .tippy-box {
+        user-select: none; /* Disable selection on the tooltip box */
+      }
+
+      /* Allow selection on the content inside the tooltip */
+      .tippy-box .tippy-content {
+        user-select: text !important; /* Enable selection for the content */
+      }
+    </style>
   </head>
 
   <body>
@@ -175,7 +186,7 @@
                 class="usa"
                 fill="url(#pattern1_9_13)"
                 data-tippy-content="<p class='fw-bold'>Kurvers Inc.</p>
-                <p>Houston,USA</p>
+                <p>Houston, USA</p>
                 <p>usa@kurvers.com<p/>
                 "
               ></rect>
@@ -218,7 +229,7 @@
                 class="italy"
                 data-tippy-content="
                 <p class='fw-bold'>Kurvers Piping Italy Srl<p/>
-                  <p>Bergamo , Italy</p>
+                  <p>Bergamo, Italy</p>
                   <p>italy@kurvers.com</p>
                 "
                 fill="url(#pattern4_9_13)"
@@ -230,7 +241,7 @@
                 height="376"
                 id="country"
                 class="uk"
-                data-tippy-content="<p class='fw-bold'>Kurvers International Supply Services Ltd.</p><p>London,UK<p/> <p>uk@kurvers.com<p/>"
+                data-tippy-content="<p class='fw-bold'>Kurvers International Supply Services Ltd.</p><p>London, UK<p/> <p>uk@kurvers.com<p/>"
                 fill="url(#pattern5_9_13)"
               />
               <rect
@@ -241,7 +252,7 @@
                 id="country"
                 class="france"
                 data-tippy-content="<p class='fw-bold'>Kürvers France Sarl<p/>
-                  <p>Paris,France</p>
+                  <p>Paris, France</p>
                   <p>france@kurvers.com<p/>
                   "
                 fill="url(#pattern6_9_13)"
@@ -254,7 +265,7 @@
                 id="country"
                 class="china"
                 data-tippy-content="<p class='fw-bold'>Kurvers Piping China Ltd.</p>
-                <p>Shanghai,China</p>
+                <p>Shanghai, China</p>
                 <p>china@kurvers.com<p/>
                 "
                 fill="url(#pattern7_9_13)"
@@ -267,7 +278,7 @@
                 id="country"
                 class="sing"
                 data-tippy-content="<p class='fw-bold'>Kurvers Singapore Pte. Ltd.<p/>
-                  <p>Singapore,Singapore</p>
+                  <p>Singapore, Singapore</p>
                   <p>singapore@kurvers.com<p>
                   "
                 fill="url(#pattern8_9_13)"
@@ -280,7 +291,7 @@
                 id="country"
                 class="uae"
                 data-tippy-content="<p class='fw-bold'>Kurvers Piping Middle East FZCO</p>
-                <p>Dubai,UAE</p>
+                <p>Dubai, UAE</p>
                 <p>uae@kurvers.com</p>
                 "
                 fill="url(#pattern9_9_13)"
@@ -522,12 +533,52 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
       // Initialize Tippy.js tooltips
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   tippy("#country", {
+      //     allowHTML: true,
+      //     theme: "custom-theme",
+      //     placement: "top",
+      //     trigger: "click", // Tooltip opens on click
+      //     hideOnClick: "outside", // Tooltip closes only on clicking outside
+      //   });
+      // });
+      // Initialize Tippy for all elements with 'data-tippy-content'
       document.addEventListener("DOMContentLoaded", function () {
-        tippy("#country", {
+        // Initialize Tippy for the 'country' element
+        let tooltipInstance = tippy("#country", {
           allowHTML: true,
           theme: "custom-theme",
           placement: "top",
+          trigger: "click",
+          hideOnClick: "toggle",
+          // interactive: true, // Keeps the tooltip open for interaction
+          onShow(instance) {
+            // Close any other open tooltips when one is clicked
+            tooltipInstance.forEach((tip) => {
+              // console.log(tip, instance);
+              if (tip?.id !== instance?.id) {
+                tip.hide();
+              }
+            });
+          },
         });
+
+        // Function to copy email to clipboard
+        // window.copyEmail = function (email) {
+        //   navigator.clipboard.writeText(email).then(() => {
+        //     alert("Email copied to clipboard!");
+        //   });
+        // };
+
+        // Close tooltip when clicking outside
+        // document.addEventListener("click", function (event) {
+        //   let isTooltipOrTrigger =
+        //     event.target.closest("[data-tippy-root]") ||
+        //     event.target.closest("#country");
+        //   if (!isTooltipOrTrigger) {
+        //     tooltipInstance.forEach((tip) => tip.hide());
+        //   }
+        // });
       });
     </script>
 

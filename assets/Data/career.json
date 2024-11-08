@@ -1,0 +1,113 @@
+[
+    {
+      "id": "1",
+      "title": "Accountant",
+      "location": "Dubai",
+      "type": "Permanent",
+      "description": "We are looking for an accountant who is responsible for maintaining accurate financial records and preparing associated reporting. The role is to support the organisation by ensuring that all financial records and reporting are up to standard, updated and maintained regularly.",
+      "responsibilities": [
+        "Ensure the timely and accurate preparation of monthly, Quarterly and annual reports",
+        "Evaluate and review monthly financial statements, results of operations, income statements and financial records.",
+        "Manage all accounting transactions and maintain general ledger",
+        "Preparation and monitoring budgets",
+        "Management and Financial Reporting",
+        "Appropriate recording and analysis of revenues and expenses",
+        "Appropriate coordination and communication with the relevant customers, suppliers, and Sales personal to ensure accuracy of information",
+        "Assisting with external audit activities",
+        "Providing process and control improvements when required"
+      ],
+      "requirements": [
+        "Must have a degree in Finance or Accounting related qualifications",
+        "Thorough knowledge and experience on working with a reputed ERP system",
+        "At least 3 years’ experience ideally in a multinational company.",
+        "Must be familiar with the UAE regulatory and tax compliance",
+        "Knowledge of Trade Finance",
+        "Excellent written and verbal communication skills",
+        "Knowledge of International Trade",
+        "Knowledge of Bank Guarantees, Letter of Credit & Exchange Hedging"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Front Desk Executive & Document Controller",
+      "location": "Dubai",
+      "type": "Permanent",
+      "description": "The Front Desk Executive & Document controller provides secretarial and administrative support to team members, vendors, and Clients.\n\nExperienced and self-motivated with superior clerical, analytical, and organizational skills, the individual has excellent oral and written communication skills and works well with team members and the public.",
+      "responsibilities": [
+        "Process one or more document types through all procedural steps in accordance with well-defined procedures and guidelines. Ensure that pre-established document control requirements are satisfactorily met throughout the duration of the project.",
+        "Receives, tracks and monitors documents using standard document management programs to register documents, maintain databases, and produces logs, transmittals and other reports as required.",
+        "Typing Memos/letters/preparing reports and scan documents for electronic storage.",
+        "Maintain an established data distribution system and schedule for the assigned project based upon client, project, department, and supplier requirements. Expedites review, signature approval, and release of supplier, clients and internally produced documents.",
+        "May perform some clerical duties such as light typing, filing, answering phones etc.",
+        "Assist Project team to ensure effective implementation of project specific procedures",
+        "Perform other responsibilities associated with this position as may be appropriate."
+      ],
+      "requirements": [
+        "Proven work experience as a front desk executive & document controller or similar role",
+        "Familiarity with project management",
+        "Hands-on experience with Adobe Acrobat and MS Office products: Word, Excel, PowerPoint etc.",
+        "Proficient typing and editing skills",
+        "Data organization skills"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Project Coordinator",
+      "location": "Dubai",
+      "type": "Permanent",
+      "description": "We are looking for a responsible Project Coordinator to administer and organize all types of projects, from simple activities to more complex plans.",
+      "responsibilities": [
+        "Ensure compliance of the company’s Supply Chain procedures and Project specific Material Management (Procurement) Plan.",
+        "Provide Excellent level of customer service on assigned accounts",
+        "Review and Analyse suppliers document and data submittal plans",
+        "Evaluate the production schedules and progress reports from suppliers to determine and make sure to meet the delivery schedule",
+        "Lead or support the implementation of selected actions to avoid or minimise the impact of supplier schedule disruptions on delivery",
+        "Manage deadlines and ensure appropriate communication is provided to relevant parties when schedule conflict arise.",
+        "Understand and perform other procurement discipline tasks such as project specific packing, colour coding, and logistics coordination",
+        "Coordinate material transportation requirement with third party freight forwarder",
+        "Preparation and processing of Project expediting file closeouts."
+      ],
+      "requirements": [
+        "Bachelor’s Degree or diploma in Engineering/Supply chain. Relevant experience may compensate for formal education",
+        "Minimum 2 years of relevant experience, primarily in the area of procurement, expediting & logistics",
+        "Knowledge of basic steel Products",
+        "Experience in oil and gas industry is an advantage",
+        "Previous Experience with ERP systems",
+        "In depth understanding of technical, commercial and contractual issues related to the procurement of goods in steel industry.",
+        "Strong written and verbal communication skills.",
+        "High Proficiency with Adobe Acrobat and MS Office products: Word, Excel, PowerPoint etc."
+      ]
+    },
+    
+        {
+          "id": "4",
+          "title": "Senior Project Coordinator",
+          "location": "Dubai",
+          "type": "Permanent",
+          "description": "We are looking for a responsible Senior Project Coordinator to administer and organize all types of projects, from simple activities to more complex plans.",
+          "responsibilities": [
+            "Ensure compliance of the company’s Supply Chain procedures and Project specific Material Management (Procurement) Plan.",
+            "Provide Excellent level of customer service on assigned accounts",
+            "Review and Analyse suppliers document and data submittal plans",
+            "Evaluate the production schedules and progress reports from suppliers to determine and make sure to meet the delivery schedule",
+            "Lead or support the implementation of selected actions to avoid or minimise the impact of supplier schedule disruptions on delivery",
+            "Manage deadlines and ensure appropriate communication is provided to relevant parties when schedule conflict arise.",
+            "Understand and perform other procurement discipline tasks such as project specific packing, colour coding, and logistics coordination",
+            "Coordinate material transportation requirement with third party freight forwarder",
+            "Preparation and processing of Project expediting file closeouts."
+          ],
+          "requirements": [
+            "Bachelor’s Degree or diploma in Engineering/Supply chain. Relevant experience may compensate for formal education",
+            "5 years of relevant experience, primarily in the area of procurement, expediting and logistics",
+            "Strong knowledge about basic steel products",
+            "Experience in oil and gas industry is an advantage",
+            "Previous Experience with ERP systems",
+            "In depth understanding of technical, commercial and contractual issues related to the procurement of goods in steel industry.",
+            "Recognize restrictions and provisions of customs regulations",
+            "Basic knowledge of embargos/sanctions & compliance",
+            "Strong written and verbal communication skills.",
+            "High Proficiency with Adobe Acrobat and MS Office products: Word, Excel, PowerPoint etc."
+          ]
+        }
+      ]
+      
