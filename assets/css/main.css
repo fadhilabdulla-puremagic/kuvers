@@ -357,7 +357,7 @@ h3:hover .underline {
 
   .navbar > ul > li {
     white-space: nowrap;
-    padding: 10px 0 10px 28px;
+    padding: 10px 0 10px 10px;
   }
 
   .navbar a,
@@ -422,7 +422,7 @@ h3:hover .underline {
     padding: 5px 15px;
     background-color: var(--color-secondary);
     color: #fff !important;
-    margin-left: 35px;
+    margin-left: 20px;
     border-radius: 5px;
   }
   .navbar .contact a:hover:before,
@@ -3067,6 +3067,25 @@ h3:hover .underline {
 
 .custom-list li::before {
   /* content: "▶"; */
+  color: var(--color-secondary);
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.custom-list-1 {
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list-1 li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  margin-top: 15px;
+}
+
+.custom-list-1 li::before {
+  content: "▶";
   color: var(--color-secondary);
   margin-right: 10px;
   font-size: 0.9rem;

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Kuvers Piping</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <script>
+      fetch("./Components/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      .scrollable-row {
+        display: flex;
+        overflow: hidden; /* Hide the scrollbar */
+        padding: 10px 0;
+        cursor: grab; /* Indicates draggable content */
+      }
+
+      .scrollable-row .col-md-5 {
+        flex: 0 0 auto;
+        margin-right: 15px;
+      }
+
+      .scrollable-row img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <!-- <div id="header"></div> -->
+    <header id="header" class="header d-flex align-items-center">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <i
+          class="mobile-nav-toggle mobile-nav-show bi bi-list text-primary"
+        ></i>
+        <i
+          class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x text-secondary"
+        ></i>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+              <a href="turnkey-solutions.html">Turnkey solutions</a>
+            </li>
+            <li>
+              <a href="product-range.html">product range</a>
+            </li>
+            <li><a href="valves.html" class="active">kurvers valves</a></li>
+            <li><a href="careers.html">careers</a></li>
+
+            <li class="contact">
+              <a href="contact.html" style="color: white; font-weight: 500"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- <section class="hero-section">
+      <div class="overlay">
+        <div class="text-container">
+          <h1>Your partner for <br /><span>SUCCESS</span></h1>
+          <p>Process Piping, Offshore, Pipelines</p>
+          <a href="#" class="cta-button">Call to action goes here</a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section
+      class="main-banner-product-range"
+      data-aos="fade-in"
+      data-aos-delay="200"
+    >
+      <div class="text-overlay row align-items-center p-4">
+        <div class="col-md-1 d-none d-md-block"></div>
+        <div
+          class="col-md-7 text-start"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <h1 class="heading">Product Range</h1>
+          <p class="sub-heading">
+            Kurvers can supply both standard materials from stock or, where
+            required, we can arrange for materials to be manufactured strictly
+            in accordance with your project's individual needs.
+          </p>
+        </div>
+      </div>
+    </section> -->
+
+    <section style="padding-bottom: 0">
+      <div class="scrollable-row" id="scrollableRow">
+        <div class="col-md-5 rounded">
+          <img src="assets/NewSet/Home9-1.png" />
+        </div>
+        <div class="col-md-5 rounded">
+          <img src="assets/NewSet/Home9-2.png" />
+        </div>
+        <div class="col-md-5 rounded">
+          <img src="assets/NewSet/Home9-3.png" />
+        </div>
+        <div class="col-md-5 rounded">
+          <img src="assets/NewSet/Home9-1.png" />
+        </div>
+        <div class="col-md-5 rounded">
+          <img src="assets/NewSet/Home9-2.png" />
+        </div>
+        <div class="col-md-5 rounded">
+          <img src="assets/NewSet/Home9-3.png" />
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 0">
+      <div class="row">
+        <div class="col-md-8 bg-primary px-4 p-4 text-white">
+          <div class="m-4">
+            <h3 style="font-size: 4rem">Valves</h3>
+            <p class="mt-4">
+              Founded in 2018 as a subsidiary of the Kürvers Group, Kürvers
+              Valves was established to address specific customer needs and
+              requirements.
+            </p>
+            <p>
+              With a legacy spanning nearly 60 years and a team of over 100
+              employees worldwide, the Kürvers Group is a respected global
+              leader in its industry, particularly in piping and related
+              products. Our extensive references and strong reputation reflect
+              our commitment to excellence. We maintain a global presence, with
+              local offices and sales representatives serving customers across
+              more than 15 countries
+            </p>
+            <p>
+              Kürvers Valves specializes in the trade of industrial valves, as
+              well as providing comprehensive planning, processing, and project
+              management services for international EPC contractors, power
+              plants, oil and gas infrastructure, and the chemical industry
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-md-4 bg-blue-light text-center d-flex align-items-center"
+        >
+          <div>
+            <p style="font-size: 3.7rem" class="fw-bolder font-style-primary">
+              “Reliability and high quality is our focus.”
+            </p>
+            <p class="text-capitalize">
+              ORIS VINCELJ, <br />
+              MANAGING DIRECTOR
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 pt-4" data-aos="fade-left" data-aos-delay="200">
+            <img
+              src="assets/NewSet/About2.png"
+              alt="About Us Image"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-7" data-aos="fade-right" data-aos-delay="200">
+            <h3 class="text-primary fw-bold mb-3 underline-alt fs-1 ls-1">
+              Kürvers Valve Products
+              <!-- <span
+                class="underline position-absolute start-0 text-black-50"
+              ></span> -->
+            </h3>
+            <p class="pt-4">
+              At Kürvers Valves, we provide products precisely tailored to
+              customer specifications and optimized for their applications. Our
+              extensive portfolio includes a wide range of designs, materials,
+              sizes, compatible accessories, and specialized solutions, along
+              with fastening materials, pipe sections, and seals. This diverse
+              selection and high product availability make us the ideal partner,
+              whether for single-valve needs or large-scale projects. We deliver
+              exceptional quality with a strong price-performance balance,
+              ensuring seamless integration of all products from our
+              manufacturers.
+            </p>
+            <p>
+              Our dedicated quality management team ensures all work meets the
+              highest standards, prioritizing both quality and safety. Customers
+              benefit from cost-effective solutions that are engineered for
+              reliable, long-term performance, minimized maintenance
+              requirements, and high profitability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container" style="padding-top: 0">
+      <div class="row">
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold">Gate valves</span> <br /><span
+              >Versions:</span
+            >
+          </p>
+
+          <ul class="custom-list-1">
+            <li>Cast gate valves</li>
+            <li>Forged gate valves</li>
+            <li>Pipeline gate valve API 6D</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Butterfly valves </span> <br /><span
+              >Versions:</span
+            >
+          </p>
+
+          <ul class="custom-list-1">
+            <li>Concentric butterfly valves</li>
+            <li>Double off-set butterfly valves</li>
+            <li>riple off-set butterfly valves</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Check valves </span> <br /><span
+              >Versions:</span
+            >
+          </p>
+
+          <ul class="custom-list-1">
+            <li>Check valves, cast/forged</li>
+            <li>Swing check valves, cast/forged</li>
+            <li>Check valves wafer-type</li>
+            <li>Swing check valves wafer-type</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Strainers </span> <br /><span
+              >Versions:</span
+            >
+          </p>
+
+          <ul class="custom-list-1">
+            <li>Strainer Y-Form</li>
+            <li>Pot strainer</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Ball valves </span> <br /><span
+              >Versions:</span
+            >
+          </p>
+          <ul class="custom-list-1">
+            <li>One-pc floating ball valves</li>
+            <li>Two-pc floating ball valves</li>
+            <li>Three-pc floating ball valves</li>
+            <li>Soft sealing</li>
+            <li>Metallic sealing</li>
+            <li>Top entry</li>
+            <li>Fully welded</li>
+            <li>3-way ball valves</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Globe valves </span> <br /><span
+              >Versions:</span
+            >
+          </p>
+          <ul class="custom-list-1">
+            <li>Cast gate valves</li>
+            <li>Forged gate valves</li>
+            <li>3-way globe valves</li>
+            <li>Y-type globe valves</li>
+            <li>Quick closing globe valves</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Special valves </span> <br /><span
+              >Versions:</span
+            >
+          </p>
+          <ul class="custom-list-1">
+            <li>Piggable valves</li>
+            <li>Nozzle check valves</li>
+            <li>Safety valves</li>
+            <li>Sight glasses</li>
+            <li>Steam traps</li>
+            <li>Mud valves</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <p>
+            <span class="fw-bold"> Drives </span> <br /><span>Versions:</span>
+          </p>
+          <ul class="custom-list-1">
+            <li>Electric</li>
+            <li>Hydraulic</li>
+            <li>Pneumatic</li>
+            <li>Gas over oil</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script>
+      // Auto-scroll the row every 2 seconds
+      const scrollableRow = document.getElementById("scrollableRow");
+      let scrollSpeed = 2; // Scroll speed in px per interval
+      let scrollInterval;
+
+      function autoScroll() {
+        scrollInterval = setInterval(function () {
+          scrollableRow.scrollLeft += scrollSpeed; // Scroll horizontally
+        }, 30); // Every 30 milliseconds
+      }
+
+      function stopAutoScroll() {
+        clearInterval(scrollInterval); // Stop auto-scrolling
+      }
+
+      // Implement drag-to-scroll functionality
+      // let isDragging = false;
+      // let startX, scrollLeft;
+
+      // scrollableRow.addEventListener("mousedown", (e) => {
+      //   isDragging = true;
+      //   startX = e.pageX - scrollableRow.offsetLeft;
+      //   scrollLeft = scrollableRow.scrollLeft;
+      //   scrollableRow.style.cursor = "grabbing"; // Change cursor on drag start
+      //   stopAutoScroll(); // Stop auto-scrolling when dragging
+      // });
+
+      // scrollableRow.addEventListener("mouseleave", () => {
+      //   isDragging = false;
+      //   scrollableRow.style.cursor = "grab";
+      // });
+
+      // scrollableRow.addEventListener("mouseup", () => {
+      //   isDragging = false;
+      //   scrollableRow.style.cursor = "grab";
+      // });
+
+      // scrollableRow.addEventListener("mousemove", (e) => {
+      //   if (!isDragging) return;
+      //   const x = e.pageX - scrollableRow.offsetLeft;
+      //   const walk = (x - startX) * 2; // Multiply for faster scrolling
+      //   scrollableRow.scrollLeft = scrollLeft - walk;
+      // });
+
+      // Start the auto-scrolling when the page loads
+      window.onload = autoScroll;
+    </script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
