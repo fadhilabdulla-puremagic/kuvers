@@ -68,16 +68,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-    <style>
-      .tippy-box {
-        user-select: none; /* Disable selection on the tooltip box */
-      }
-
-      /* Allow selection on the content inside the tooltip */
-      .tippy-box .tippy-content {
-        user-select: text !important; /* Enable selection for the content */
-      }
-    </style>
   </head>
 
   <body>
@@ -188,7 +178,7 @@
                 fill="url(#pattern1_9_13)"
                 data-tippy-content="<p class='fw-bold'>Kurvers Inc.</p>
                 <p>Houston, USA</p>
-                <p>usa@kurvers.com<p/>
+                <p class='email'>usa@kurvers.com<p/>
                 "
               ></rect>
 
@@ -200,12 +190,12 @@
                 id="country"
                 class="ger"
                 data-tippy-content="<p class='fw-bold'>Horst Kürvers GmbH</p><p>Willstätterstraße 30, 40549 Düsseldorf</p>
-                <p>germany@kurvers.com</p>
+                <p class='email'>germany@kurvers.com</p>
 <p>+49 211 959595-0</p>
 <hr/>
 <p class='fw-bold'>Kürvers Valves GmbH</p>
 <p>Düsseldorf, Germany</p>
-<p>germany@kurvers-valves.com</p>
+<p class='email'>germany@kurvers-valves.com</p>
                 "
                 fill="url(#pattern2_9_13)"
               />
@@ -217,7 +207,7 @@
                 class="ner"
                 data-tippy-content="<p class='fw-bold'>Kürvers Piping BV</p>
                 <p>Capelle aan den IJssel, The Netherlands</p>
-                <p>netherlands@kurvers.com<p/>
+                <p class='email'>netherlands@kurvers.com<p/>
                 "
                 fill="url(#pattern3_9_13)"
               />
@@ -231,7 +221,7 @@
                 data-tippy-content="
                 <p class='fw-bold'>Kurvers Piping Italy Srl<p/>
                   <p>Bergamo, Italy</p>
-                  <p>italy@kurvers.com</p>
+                  <p class='email'>italy@kurvers.com</p>
                 "
                 fill="url(#pattern4_9_13)"
               />
@@ -242,7 +232,7 @@
                 height="376"
                 id="country"
                 class="uk"
-                data-tippy-content="<p class='fw-bold'>Kurvers International Supply Services Ltd.</p><p>London, UK<p/> <p>uk@kurvers.com<p/>"
+                data-tippy-content="<p class='fw-bold'>Kurvers International Supply Services Ltd.</p><p>London, UK<p/> <p class='email'>uk@kurvers.com<p/>"
                 fill="url(#pattern5_9_13)"
               />
               <rect
@@ -254,7 +244,7 @@
                 class="france"
                 data-tippy-content="<p class='fw-bold'>Kürvers France Sarl<p/>
                   <p>Paris, France</p>
-                  <p>france@kurvers.com<p/>
+                  <p class='email'>france@kurvers.com<p/>
                   "
                 fill="url(#pattern6_9_13)"
               />
@@ -267,7 +257,7 @@
                 class="china"
                 data-tippy-content="<p class='fw-bold'>Kurvers Piping China Ltd.</p>
                 <p>Shanghai, China</p>
-                <p>china@kurvers.com<p/>
+                <p class='email'>china@kurvers.com<p/>
                 "
                 fill="url(#pattern7_9_13)"
               />
@@ -280,7 +270,7 @@
                 class="sing"
                 data-tippy-content="<p class='fw-bold'>Kurvers Singapore Pte. Ltd.<p/>
                   <p>Singapore, Singapore</p>
-                  <p>singapore@kurvers.com<p>
+                  <p class='email'>singapore@kurvers.com<p>
                   "
                 fill="url(#pattern8_9_13)"
               />
@@ -293,7 +283,7 @@
                 class="uae"
                 data-tippy-content="<p class='fw-bold'>Kurvers Piping Middle East FZCO</p>
                 <p>Dubai, UAE</p>
-                <p>uae@kurvers.com</p>
+                <p class='email'>uae@kurvers.com</p>
                 "
                 fill="url(#pattern9_9_13)"
               />
@@ -552,10 +542,15 @@
         // Initialize Tippy for the 'country' element
         let tooltipInstance = tippy("#country", {
           allowHTML: true,
+
           theme: "custom-theme",
           placement: "top",
           trigger: "click",
           hideOnClick: "toggle",
+          animation: "scale",
+          arrow: true,
+          arrowType: "round",
+
           // interactive: true, // Keeps the tooltip open for interaction
           onShow(instance) {
             // Close any other open tooltips when one is clicked
@@ -565,25 +560,24 @@
                 tip.hide();
               }
             });
+            console.log(instance.popper);
+
+            const emailElement = instance.popper.querySelector(".email");
+            if (emailElement) {
+              const email = emailElement.textContent;
+              emailElement.addEventListener("click", function () {
+                navigator.clipboard
+                  .writeText(email)
+                  .then(function () {
+                    alert("Email copied to clipboard!");
+                  })
+                  .catch(function (err) {
+                    alert("Failed to copy: " + err);
+                  });
+              });
+            }
           },
         });
-
-        // Function to copy email to clipboard
-        // window.copyEmail = function (email) {
-        //   navigator.clipboard.writeText(email).then(() => {
-        //     alert("Email copied to clipboard!");
-        //   });
-        // };
-
-        // Close tooltip when clicking outside
-        // document.addEventListener("click", function (event) {
-        //   let isTooltipOrTrigger =
-        //     event.target.closest("[data-tippy-root]") ||
-        //     event.target.closest("#country");
-        //   if (!isTooltipOrTrigger) {
-        //     tooltipInstance.forEach((tip) => tip.hide());
-        //   }
-        // });
       });
     </script>
 

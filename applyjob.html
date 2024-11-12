@@ -187,16 +187,32 @@
                       required
                     />
                   </div>
-                  <div class="col-md-6 form-group">
-                    <label for="experience">Years of Experience</label>
+                  <!-- <div class="col-md-6 form-group">
+                    <label for="cvUpload">Upload CV</label><br />
                     <input
-                      type="number"
-                      class="form-control"
-                      id="experience"
-                      placeholder="Enter years of experience"
-                      min="0"
+                      type="file"
+                      class="form-control-file"
+                      id="cvUpload"
+                      name="cvUpload"
+                      accept=".pdf, .doc, .docx, .txt"
                       required
                     />
+                  </div> -->
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="cvUpload">Upload CV</label>
+                    <div class="input-group">
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="cvUpload"
+                        name="cvUpload"
+                        accept=".pdf, .doc, .docx, .txt"
+                        required
+                      />
+                      <!-- <label class="input-group-text" for="cvUpload"
+                        ><i class="bi bi-paperclip"></i> Choose File</label
+                      > -->
+                    </div>
                   </div>
                 </div>
                 <div class="d-flex justify-content-center">

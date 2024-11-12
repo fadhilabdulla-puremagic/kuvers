@@ -3186,7 +3186,31 @@ h3:hover .underline {
   border: 2px solid var(--color-secondary); /* Optional: customize the border color */
 }
 
+.tippy-box[data-theme~="custom-theme"] .email {
+  pointer-events: auto;
+  user-select: text !important;
+  cursor: pointer;
+}
+
 /* Optional: Style the arrow to match */
 .tippy-box[data-theme~="custom-theme"] .tippy-arrow {
+  z-index: -1;
   color: var(--color-secondary);
+}
+.custom-tab {
+  /* background-color: var(--color-primary) !important; */
+  border: 1px solid var(--color-white) !important;
+  color: white;
+}
+
+.custom-tab:hover {
+  background-color: var(--color-primary) !important;
+  color: white;
+}
+
+.custom-tab.active {
+  background-color: white !important; /* White background for active tab */
+  color: var(
+    --color-primary
+  ) !important; /* Primary color text for active tab */
 }
