@@ -178,14 +178,28 @@
                     />
                   </div>
                   <div class="col-md-6 form-group">
-                    <label for="phone">Phone Number</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="phone"
-                      placeholder="Enter your phone number"
-                      required
-                    />
+                    <label for="phone"
+                      >Phone Number
+                      <small class="fw-6">with country code </small></label
+                    >
+                    <div class="input-group">
+                      <span class="input-group-text">+</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="countryCode"
+                        placeholder="971"
+                        style="max-width: 80px"
+                        required
+                      />
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="56XXXXXXXXXX"
+                        required
+                      />
+                    </div>
                   </div>
                   <!-- <div class="col-md-6 form-group">
                     <label for="cvUpload">Upload CV</label><br />
@@ -198,8 +212,8 @@
                       required
                     />
                   </div> -->
-                  <div class="col-md-6 form-group mb-3">
-                    <label for="cvUpload">Upload CV</label>
+                  <div class="col-md-6 form-group">
+                    <label for="cvUpload">Upload Cover Letter</label>
                     <div class="input-group">
                       <input
                         type="file"
@@ -209,9 +223,19 @@
                         accept=".pdf, .doc, .docx, .txt"
                         required
                       />
-                      <!-- <label class="input-group-text" for="cvUpload"
-                        ><i class="bi bi-paperclip"></i> Choose File</label
-                      > -->
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-group mb-3">
+                    <label for="cvUpload">Upload Resume</label>
+                    <div class="input-group">
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="cvUpload"
+                        name="cvUpload"
+                        accept=".pdf, .doc, .docx, .txt"
+                        required
+                      />
                     </div>
                   </div>
                 </div>
