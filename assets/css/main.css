@@ -370,7 +370,7 @@ h3:hover .underline {
     letter-spacing: 2px;
     font-size: 18px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.6);
+    /* color: var(--color-secondary); */
     text-transform: uppercase;
     white-space: nowrap;
     transition: 0.3s;
